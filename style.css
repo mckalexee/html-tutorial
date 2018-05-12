@@ -50,11 +50,15 @@ body {
   border-radius: 50px;
   margin: 10px;
   box-shadow: 5px 5px 15px #ddd;
+  transition-duration: 0.25s;
+
 }
 
 .post:hover {
-  background-color: #D7DAE5;
+  background-color: #ebeefb;
   cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 10px 5px 15px #ddd;
 }
 
 .post-avatar img {
