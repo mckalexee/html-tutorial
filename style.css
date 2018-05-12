@@ -1,13 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Helvetica, Arial, Sans-Serif;
-  background-color: #ADD7F6
+  background-color: #DFDFDF;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
+  padding-top: 70px;
 }
 
 .header {
@@ -17,8 +23,8 @@ body {
   right: 0;
   left: 0;
   height: 70px;
-  background-color: #3B28CC;
-  color: white;
+  background-color: #2F3061;
+  color: #DFDFDF;
 }
 
 .header h1 {
@@ -33,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 80px 10px 10px 10px;
 }
 
 .post {
@@ -44,7 +49,7 @@ body {
   border: thin solid #ccc;
   border-radius: 50px;
   margin: 10px;
-  box-shadow: 2px 2px 10px #999;
+  box-shadow: 5px 5px 15px #ddd;
 }
 
 .post:hover {
@@ -53,8 +58,8 @@ body {
 }
 
 .post-avatar img {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
   transform: translateY(2px);
 }
@@ -73,3 +78,28 @@ body {
 .post-body p::after {
   content: "”"
 }
+
+.menu {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  background-color: #297373;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #DFDFDF;
+  text-transform: uppercase;
+}
+
+.menu a.active {
+  text-decoration: underline;
+}
+
+.menu a:hover {
+  background-color: #278686;
+  font-weight: bold
+}
+
