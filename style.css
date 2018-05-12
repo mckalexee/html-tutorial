@@ -1,0 +1,75 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Helvetica, Arial, Sans-Serif;
+  background-color: #ADD7F6
+}
+
+body {
+  display: flex;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: #3B28CC;
+  color: white;
+}
+
+.header h1 {
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.container {
+  min-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 80px 10px 10px 10px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 5px;
+  border: thin solid #ccc;
+  border-radius: 50px;
+  margin: 10px;
+  box-shadow: 2px 2px 10px #999;
+}
+
+.post:hover {
+  background-color: #D7DAE5;
+  cursor: pointer;
+}
+
+.post-avatar img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  transform: translateY(2px);
+}
+
+.post-body {
+  text-align: center;
+  flex-grow: 1;
+  color: #444;
+  font-size: 1.5em;
+}
+
+.post-body p::before {
+  content: "“"
+}
+
+.post-body p::after {
+  content: "”"
+}
